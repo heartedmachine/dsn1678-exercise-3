@@ -2,7 +2,7 @@ var salesLeft = $('.salesLeft');
 var detailsLeft = $('.detailsLeft');
 
 var buttonClickHandler = function () {
-	var currentState = detailsLeft.attr('data-state')
+	var currentState = detailsLeft.attr('data-state');
 
 	if (currentState == 'active') {
 		detailsLeft.attr('data-state', 'inactive');
@@ -11,14 +11,14 @@ var buttonClickHandler = function () {
 	}
 };
 
-salesLeft.on('click', buttonClickHandler);
+salesLeft.on('click', buttonClickHandler)
 
 
-var salesRight = $('.sales');
-var detailsRight = $('.sales__details');
+var salesRight = $('.salesRight');
+var detailsRight = $('.detailsRight');
 
 var buttonClickHandler = function () {
-	var currentState = detailsRight.attr('data-state')
+	var currentState = detailsRight.attr('data-state');
 
 	if (currentState == 'active') {
 		detailsRight.attr('data-state', 'inactive');
@@ -27,4 +27,4 @@ var buttonClickHandler = function () {
 	}
 };
 
-salesRight.on('click', buttonClickHandler);
+salesRight.on('click', buttonClickHandler)

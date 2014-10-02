@@ -87,16 +87,12 @@ body {
   padding: 2em;
   position: absolute;
   width: 90%;
-  opacity: 0;
+
   background-color: #000;
   border-radius: 6px;
+
+  opacity: 0;
 }
-
-
-.detailsLeft[data-state="active"] {
-  opacity: 1;
-}
-
 
 .sales__details::before {
   top: -10px;
@@ -161,4 +157,8 @@ body {
   background: #555;
 
   text-indent: 100%;
+}
+
+.sales__details[data-state="active"] {
+  opacity: 1;
 }
